@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "613109271098",
+    "project_id": "controle-saida-aluno",
+    "storage_bucket": "controle-saida-aluno.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613109271098:android:39aed3fe1869ed237b4303",
+        "android_client_info": {
+          "package_name": "com.example.controle_saida_aluno"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG2LqC6warQ1EwKaYfbi_O6hY7ET5uVaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613109271098:android:6390e3680009e1787b4303",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG2LqC6warQ1EwKaYfbi_O6hY7ET5uVaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+name: flutter_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.1.3
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  image_picker: ^1.1.2
+  cloud_firestore: ^5.4.0
+  timeline_tile: ^2.0.0
+  firebase_storage: ^12.2.0
+  intl: ^0.19.0
+  mat_month_picker_dialog: ^1.1.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_svg: ^2.0.10+1
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/dirio_books_1_removebg_preview_11.png
+  - assets/vectors/icon_6_x2.svg
+  - assets/vectors/icon_19_x2.svg
+  - assets/images/rectangle_16.png
+  - assets/images/dirio_books_1_removebg_preview_1.png
+  - assets/images/senha-incorreta.png
+  - assets/images/email-enviado.png
+  - assets/images/enviar.png
+  - assets/images/perfil.png
+  - assets/images/perfil2.png
+  - assets/vectors/rectangle_15_x2.svg
+  - assets/vectors/icon_13_x2.svg
+  - assets/vectors/rectangle_161_x2.svg
+  - assets/vectors/icon_x2.svg
+  - assets/vectors/icon_25_x2.svg
+  - assets/images/lecture_1.png
+  - assets/images/lecture_3.png
+  - assets/images/book.png
+  - assets/images/rectangle_20.jpeg
+  - assets/images/aluno.png
+  - assets/images/student.png
+  - assets/vectors/icon_16_x2.svg
+  - assets/vectors/rectangle_35_x2.svg
+  - assets/vectors/rectangle_31_x2.svg
+  - assets/vectors/rectangle_28_x2.svg
+  - assets/vectors/rectangle_29_x2.svg
+  - assets/vectors/icon_26_x2.svg
+  - assets/vectors/rectangle_34_x2.svg
+  - assets/vectors/rectangle_27_x2.svg
+  - assets/vectors/rectangle_202_x2.svg
+  - assets/vectors/rectangle_30_x2.svg
+  - assets/vectors/icon_3_x2.svg
+  - assets/vectors/icon_4_x2.svg
+  - assets/vectors/rectangle_32_x2.svg
+  - assets/vectors/icon_9_x2.svg
+  - assets/vectors/icon_12_x2.svg
+  - assets/vectors/icon_8_x2.svg
+  - assets/vectors/icon_15_x2.svg
+  - assets/images/dirio_books_2_removebg_preview_1.png
+  - assets/images/rectangle_16.png
+  - assets/images/lecture_12.png
+  - assets/images/palestra_1.png
+  - assets/vectors/icon_17_x2.svg
+  - assets/vectors/rectangle_21_x2.svg
+  - assets/vectors/rectangle_22_x2.svg
+  - assets/vectors/icon_21_x2.svg
+  - assets/vectors/icon_7_x2.svg
+  - assets/vectors/icon_24_x2.svg
+  - assets/vectors/icon_20_x2.svg
+  - assets/vectors/rectangle_201_x2.svg
+  - assets/vectors/rectangle_23_x2.svg
+  - assets/vectors/rectangle_24_x2.svg
+  - assets/vectors/rectangle_162_x2.svg
+  - assets/vectors/icon_14_x2.svg
+
