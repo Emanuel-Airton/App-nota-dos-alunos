@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/core/app_export.dart';
 import 'package:flutter_app/features/auth/widgets/snackbar.dart';
-import 'package:flutter_app/features/profile/provider/profile_provider.dart';
 import 'package:flutter_app/features/profile/widgets/containerTextField.dart';
-import 'package:provider/provider.dart';
 import '../services/profile_edit_service.dart';
 
 class ProfileUpdateDisplayName extends StatefulWidget {

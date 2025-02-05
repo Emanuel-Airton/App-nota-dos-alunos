@@ -68,11 +68,6 @@ class FrequenciaProvider extends ChangeNotifier {
     }
   }
 
-  /* mesSelecionado(int index) {
-    _mes = alunos[index]['frequencia']['mês'].toString();
-    notifyListeners();
-  }*/
-
   recebeValorFaltaAluno(int indexAluno, int indexAlunoFrequencia) {
     alunos[indexAluno]['frequencia']['dias'][indexAlunoFrequencia]['falta'] =
         !alunos[indexAluno]['frequencia']['dias'][indexAlunoFrequencia]

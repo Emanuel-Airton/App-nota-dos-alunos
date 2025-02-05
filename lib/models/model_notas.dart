@@ -22,14 +22,6 @@ class Notas {
 
   set trimestre(value) => _trimestre = value;
 
-/*  Map<String, dynamic> toMap() {
-    Map<String, dynamic> map = {
-      "Média final": [
-        {disciplina.nomeDisciplina: mediaFinal}
-      ]
-    };
-    return map;
-  }*/
   Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {disciplina.nomeDisciplina: mediaFinal};
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app/features/disciplinas/services/disciplina_services.dart';
 import 'package:flutter_app/features/disciplinas/widgets/container_nome_disciplina.dart';
 import 'package:flutter_app/features/disciplinas/widgets/container_nome_turma_disciplina.dart';
