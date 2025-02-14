@@ -23,16 +23,21 @@ class AuthService {
   }
 
   Future<User> siginFirebaseAuth(AuthModel authModel) async {
-    User user;
+    // User user;
     try {
       UserCredential userCredential =
           await _firebaseAuth.signInWithEmailAndPassword(
               email: authModel.email, password: authModel.senha);
-      user = userCredential.user!;
-      !user.emailVerified == false;
+      //user = userCredential.user!;
+      User? user = userCredential.user;
+      user?.emailVerified == false;
       //await setPreferences(user.uid);
-      debugPrint("id do usuario logado: ${user.uid}");
-      debugPrint("email do usuario logado: ${user.email}");
+      if (user == null) {
+        throw FirebaseAuthException(
+            code: 'user-not-found', message: 'Usuário não encontrado');
+      }
+      debugPrint("id do usuario logado: ${user!.uid}");
+      debugPrint("email do usuario logado: ${user!.email}");
       debugPrint(user.toString());
       return user;
     } on FirebaseAuthException catch (erro) {

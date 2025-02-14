@@ -33,9 +33,12 @@ class _ButtomLoginState extends State<ButtomLogin> {
       onPressed: () async {
         if (widget.formKey.currentState!.validate()) {
           try {
-            await sign(widget.emailcontroller, widget.senhacontroller);
-            Navigator.push(context,
-                Routes().generateRoutes(const RouteSettings(name: "email")));
+            User? user =
+                await sign(widget.emailcontroller, widget.senhacontroller);
+            if (user != null) {
+              Navigator.push(context,
+                  Routes().generateRoutes(const RouteSettings(name: "email")));
+            }
           } catch (e) {
             ScaffoldMessenger.of(context)
                 .showSnackBar(snackBarWidget.snackbar(context, e.toString()));
@@ -56,13 +59,10 @@ class _ButtomLoginState extends State<ButtomLogin> {
       widget.emailcontroller,
       widget.senhacontroller,
     );
-    try {
-      User user = await authService.siginFirebaseAuth(authModel);
-      authuserProvider.setUser(user);
-      ProfileModel profileModel = ProfileModel.fromUser(user);
-      profileProvider.setProfile(profileModel);
-    } catch (error) {
-      debugPrint('Erro ao fazer login: $error');
-    }
+    User user = await authService.siginFirebaseAuth(authModel);
+    authuserProvider.setUser(user);
+    ProfileModel profileModel = ProfileModel.fromUser(user);
+    profileProvider.setProfile(profileModel);
+    return user;
   }
 }

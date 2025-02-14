@@ -7,6 +7,7 @@ class AuthUserProvider extends ChangeNotifier {
   get user => _user;
   void setUser(User user) {
     _user = user;
+    debugPrint('testeando usuario: ${_user?.email.toString()}');
     notifyListeners();
   }
 }
